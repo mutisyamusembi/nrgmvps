@@ -12,17 +12,14 @@ $db = new mysqli($dbHost, $dbUsername, $dbPassword, $dbName);
 if ($db->connect_error) {
     die("Connection failed: " . $db->connect_error);
 }
-
-
-
 // File upload path for pictures
-$targetDirPic = "uploads/profile";
+$targetDirPic = "photos/";
 $fileNamePic = basename($_FILES["img"]["name"]);
 $targetFilePathPic = $targetDirPic . $fileNamePic;
 $fileTypePic = pathinfo($targetFilePathPic,PATHINFO_EXTENSION);
 
 // File upload path for Media
-$targetDirMedia = "uploads/media";
+$targetDirMedia = "media/";
 $fileNameMedia = basename($_FILES["file"]["name"]);
 $targetFilePathMedia = $targetDirMedia . $fileNameMedia;
 $fileTypeMedia = pathinfo($targetFilePathMedia,PATHINFO_EXTENSION);
@@ -39,7 +36,7 @@ if(isset($_POST["submit"])){
         $query = "INSERT INTO submissions (name, email, phone, profile_photo, link, media)
         VALUES('$name','$email','$phone', '$fileNamePic', '$link','$fileNameMedia')";
         if (mysqli_query($db, $query)) {
-            echo "File uploaded successfully";
+            header('location: success.php');
            
         }
     }

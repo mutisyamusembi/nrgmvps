@@ -39,7 +39,7 @@ if(isset($_POST["submit"])){
         $query = "INSERT INTO submissions (name, email, phone, profile_photo, link, media)
         VALUES('$name','$email','$phone', '$fileNamePic', '$link','$fileNameMedia')";
         if (mysqli_query($db, $query)) {
-            echo "File uploaded successfully";
+            header('location: success.php');
            
         }
     }

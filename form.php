@@ -5,13 +5,12 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Arsha Bootstrap Template - Index</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <title>Nrg MVPS</title>
+  
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/img/favicon.ico" rel="icon">
+
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -75,8 +74,8 @@
                     </div>
 
                     <div class="form-group">
-                        <label>We encourage any material that would allow us to know you better(Video/audio)</label>
-                            <input type="file" id="img" name="file" accept="audio/*,video/*,image/*" required> 
+                        <label>We encourage any material that would allow us to know you better(Video)</label>
+                            <input type="file" id="img" name="file" accept="video/*" required> 
                     </div>
                     
                     
